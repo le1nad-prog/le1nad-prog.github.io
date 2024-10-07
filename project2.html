@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap w/ Webpack</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Tourist Spots</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
     * {
       font-family: 'Poppins', sans-serif;
@@ -133,7 +132,6 @@
 
     footer {
       color: black;
-      padding-top: 25px;
       text-align: center;
     }
 
@@ -143,13 +141,13 @@
 <body>
   <div class="image-container">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="container-fluid d-flex col-xs-12 col-sm-12">
         <div class="d-flex">
           <a href="index.html" class="nav-link">Home</a>
           <a href="#destination" class="nav-link">Destinations</a>
           <a href="#mayon" class="nav-link">More Info</a>
         </div>
-        <div class="search-bar">
+        <div class="search-bar" >
           <form class="d-flex" role="search">
             <input class="form-control" type="search" placeholder="Search Tourist Spots" aria-label="Search">
             <button class="btn btn-success" type="submit">Search</button>
@@ -157,9 +155,7 @@
         </div>
       </div>
     </nav>
-    <img src="https://www.judethetourist.com/wp-content/uploads/2022/10/Palawan-Philippines-1536x1024.jpeg"
-      alt="Philippines">
-    <div class="overlay"></div>
+    <img src="https://www.judethetourist.com/wp-content/uploads/2022/10/Palawan-Philippines-1536x1024.jpeg" alt="Philippines">
     <div class="centered-text">
       <h1>Philippines</h1>
       <p> 
@@ -168,10 +164,10 @@
     </div>
   </div>
   <div id="destination" class="container">
-    <h2 class="display-3 py-3 mx-3" style="text-align: center; font-weight: bold; font-style: italic;">Destinations</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
+    <h2 class="display-3 py-3 mx-3" style="text-align: center; font-weight: bold; font-style: italic; color:#0d6efd">Destinations</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <div class="col">
-        <div class="card">
+        <div class="card" >
           <img src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/ip2r51uzmecp4otiqi7l.webp" class="card-img-top" alt="Mayon Volcano">
           <div class="card-body">
             <h3 class="card-title" style="font-weight: bold; font-style: italic; text-align: center;">Mayon Volcano</h3>
@@ -234,70 +230,83 @@
   </div>
   <div class="container py-5">
     <div id="mayon" class="destination-section row mb-4">
-      <div class="col-md-6">
-        <img src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/ip2r51uzmecp4otiqi7l.webp" alt="Mayon Volcano" class="destination-img" style="width: 100%; height: 350px;">
+      <div class="col-md-6 py-2">
+        <div class="card">
+          <img src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/ip2r51uzmecp4otiqi7l.webp" alt="Mayon Volcano" class="card-img-top" style="width: 100%; height: 350px;">
+        </div>
       </div>
-      <div class="col-md-6 py-3">
+      <div class="col-md-6 py-2">
         <h3 style="font-style: italic; font-weight: bold; text-align: center;">Mayon Volcano</h3>
         <p class="destination-description" style="text-align: justify;">Mayon Volcano is famous for its perfect cone shape, often regarded as the most active volcano in the Philippines. It stands at 2,462 meters tall and is surrounded by the Mayon Volcano Natural Park, which offers hiking trails and stunning views for nature lovers and adventure seekers. The area also features lush landscapes and rich biodiversity, making it a popular destination for eco-tourism.</p>
         <p class="destination-description" style="text-align: justify;">Visitors can enjoy various activities such as trekking, birdwatching, and exploring the surrounding communities. The locals celebrate the annual Ibalong Festival, showcasing their rich culture and traditions. The breathtaking scenery and the thrill of exploring an active volcano make Mayon a must-visit destination in the Philippines.</p>
       </div>
     </div>
     <div id="el-nido" class="destination-section row mb-4">
-      <div class="col-md-6 py-3">
+      <div class="col-md-6 py-2">
         <h3 style="font-style: italic; font-weight: bold; text-align: center;">El Nido, Palawan</h3>
         <p class="destination-description" style="text-align: justify;">El Nido is renowned for its stunning limestone cliffs, crystal-clear waters, and pristine beaches. It is part of the Bacuit Archipelago, which boasts over 40 islands and islets, making it a paradise for island-hopping, snorkeling, and diving. The diverse marine life and vibrant coral reefs attract divers from around the world, while the breathtaking scenery provides an idyllic backdrop for relaxation.</p>
         <p class="destination-description" style="text-align: justify;">In addition to its natural beauty, El Nido offers eco-friendly resorts and local eateries serving delicious Filipino cuisine. Visitors can take guided tours to explore hidden lagoons, secret beaches, and witness the vibrant sunsets. Whether you’re looking to unwind on the beach or embark on an adventure, El Nido caters to all types of travelers.</p>
       </div>
-      <div class="col-md-6">
-        <img src="https://joshtrips.com/wp-content/uploads/2016/12/elnido4.jpg?w=1200&h=795&crop=1" alt="El Nido" class="destination-img" style="width: 100%; height: 350px;">
+      <div class="col-md-6 py-2">
+        <div class="card">
+          <img src="https://joshtrips.com/wp-content/uploads/2016/12/elnido4.jpg?w=1200&h=795&crop=1" alt="El Nido" class="card-img-top" style="width: 100%; height: 350px;">
+        </div>
       </div>
     </div>
     <div id="tagaytay" class="destination-section row mb-4">
-      <div class="col-md-6">
-        <img src="https://www.vacationhive.com/images/hives/21/21-tagaytay-main-banner.jpg" alt="Tagaytay" class="destination-img" style="width: 100%; height: 350px;">
+      <div class="col-md-6 py-2">
+        <div class="card">
+          <img src="https://www.vacationhive.com/images/hives/21/21-tagaytay-main-banner.jpg" alt="Tagaytay" class="card-img-top" style="width: 100%; height: 350px;">
+        </div>
       </div>
-      <div class="col-md-6 py-3">
+      <div class="col-md-6 py-2">
         <h3 style="font-style: italic; font-weight: bold; text-align: center;">Tagaytay</h3>
         <p class="destination-description" style="text-align: justify;">Tagaytay is a popular tourist destination known for its cool climate and stunning views of Taal Volcano, which sits in the middle of Taal Lake. It offers various activities, including horseback riding, zip-lining, and visiting gardens. The scenic landscape, combined with local cuisine and fresh produce, makes Tagaytay a favorite weekend getaway for city dwellers from Manila.</p>
         <p class="destination-description" style="text-align: justify;">Apart from the natural attractions, Tagaytay is also home to numerous cafes and restaurants with panoramic views, serving traditional Filipino dishes and local specialties. The People’s Park in the Sky offers a historical perspective and a breathtaking view of the surrounding landscapes, making it a great spot for photography and relaxation.</p>
       </div>
     </div>
     <div id="boracay" class="destination-section row mb-4">
-      <div class="col-md-6 py-3">
+      <div class="col-md-6 py-2">
         <h3 style="font-style: italic; font-weight: bold; text-align: center;">Boracay</h3>
         <p class="destination-description" style="text-align: justify;">Boracay is a small island known for its powdery white sand beaches and vibrant nightlife. White Beach, the most famous stretch, offers various water sports and activities, including windsurfing and parasailing. The island is also home to lively bars, restaurants, and shopping areas, making it a hub for both relaxation and entertainment, attracting tourists from all over the world.</p>
         <p class="destination-description" style="text-align: justify;">Beyond its nightlife, Boracay has also embraced sustainability and responsible tourism. Visitors can explore nearby islands, partake in eco-friendly tours, or simply unwind in one of its luxurious beachfront resorts. The island's picturesque sunsets are a sight to behold, making Boracay a perfect getaway for couples and families alike.</p>
       </div>
-      <div class="col-md-6">
-        <img src="https://www.rappler.com/tachyon/2022/07/boracay.jpg?resize=1280%2C720&zoom=1" alt="Boracay" class="destination-img" style="width: 100%; height: 350px;">
+      <div class="col-md-6 py-2">
+        <div class="card">
+          <img src="https://www.rappler.com/tachyon/2022/07/boracay.jpg?resize=1280%2C720&zoom=1" alt="Boracay" class="card-img-top" style="width: 100%; height: 350px;">
+        </div>
       </div>
     </div>
+  
     <div id="chocolate-hills" class="destination-section row mb-4">
-      <div class="col-md-6">
-        <img src="https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/canvas/2024/03/16/292da4f2-ac6a-4b21-9318-441150086651_f9365846.jpg?itok=xCfPW9v7&v=1710560635" alt="Chocolate Hills" class="destination-img" style="width: 100%; height: 350px;">
+      <div class="col-md-6 py-2">
+        <div class="card">
+          <img src="https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/canvas/2024/03/16/292da4f2-ac6a-4b21-9318-441150086651_f9365846.jpg?itok=xCfPW9v7&v=1710560635" alt="Chocolate Hills" class="card-img-top" style="width: 100%; height: 350px;">
+        </div>
       </div>
-      <div class="col-md-6 py-3">
+      <div class="col-md-6 py-2">
         <h3 style="font-style: italic; font-weight: bold; text-align: center;">Chocolate Hills</h3>
-        <p class="destination-description" style="text-align: justify;">The Chocolate Hills, located in Bohol, are ageological formation consisting of at least 1,260 hills that turn brown during the dry season, resembling chocolate mounds. This unique landscape is best viewed from the Chocolate Hills Viewpoint. The area also features various outdoor activities, including ATV rides and trekking, making it a must-visit for adventure enthusiasts and nature lovers alike.</p>
+        <p class="destination-description" style="text-align: justify;">The Chocolate Hills, located in Bohol, are a geological formation consisting of at least 1,260 hills that turn brown during the dry season, resembling chocolate mounds. This unique landscape is best viewed from the Chocolate Hills Viewpoint. The area also features various outdoor activities, including ATV rides and trekking, making it a must-visit for adventure enthusiasts and nature lovers alike.</p>
         <p class="destination-description" style="text-align: justify;">The Chocolate Hills are not only a visual marvel but also a significant part of local culture and folklore. The surrounding areas are rich in biodiversity, offering opportunities to explore native flora and fauna. Additionally, nearby attractions such as the Tarsier Sanctuary and Loboc River provide further insight into the natural beauty and heritage of Bohol.</p>
       </div>
     </div>
     <div id="coron" class="destination-section row mb-4">
-      <div class="col-md-6 col-xs-12 py-3">
+      <div class="col-md-6 py-2">
         <h3 style="font-style: italic; font-weight: bold; text-align: center;">Coron, Palawan</h3>
         <p class="destination-description" style="text-align: justify;">Coron is famous for its stunning lagoons, pristine beaches, and historical shipwrecks. It offers some of the best diving spots in the world, where you can explore colorful coral reefs and vibrant marine life. Coron is also known for its hot springs and breathtaking viewpoints, providing a perfect mix of adventure and relaxation for visitors.</p>
         <p class="destination-description" style="text-align: justify;">In addition to diving, Coron offers a rich cultural experience with its local communities. Travelers can engage in guided tours to learn about the traditions and lifestyles of the indigenous Tagbanua people. The island's natural beauty and historical significance make it a top destination for those seeking both adventure and cultural immersion.</p>
       </div>
-      <div class="col-md-6">
-        <img src="https://gttp.images.tshiftcdn.com/329210/x/0/twin-lagoon-coron-palawan.jpg?auto=format%2Ccompress&crop=faces%2Cedges%2Ccenter&bg=%23fff&fit=crop&q=32&h=800&dpr=1" alt="Coron" class="destination-img" style="width: 100%; height: 350px;">
+      <div class="col-md-6 py-2">
+        <div class="card">
+          <img src="https://gttp.images.tshiftcdn.com/329210/x/0/twin-lagoon-coron-palawan.jpg?auto=format%2Ccompress&crop=faces%2Cedges%2Ccenter&bg=%23fff&fit=crop&q=55&w=1200&h=800" alt="Coron" class="card-img-top" style="width: 100%; height: 350px;">
+        </div>
       </div>
     </div>
-
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-OL1EYVwoeD7hA/Pew1uC2lD8mY9YBrx0EcK/WfwtA3/cpFOFomjHLhN50PUeBfP3" crossorigin="anonymous"></script>
 
-    <footer>
-        <p>&copy; 2024 Project 2. All rights reserved.</p>
+  <footer>
+      <p>&copy; 2024 Project 2. All rights reserved.</p>
   </footer>
 </body>
 
