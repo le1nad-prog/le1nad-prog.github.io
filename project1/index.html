@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acer Aspire 3 Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            max-width: 100%;
-            height: auto;
-            background: white;
+            color: #000;
         }
 
-        header {
+        .navbar {
             background-color: #fff;
             color: #83B81A;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
+            padding: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        header h1 {
+        .navbar h1 {
             font-size: 2.5em;
             margin: 0;
             padding: 20px;
@@ -32,36 +30,36 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
 
-        .head-buttons {
+        .nav-buttons {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-        .head-buttons a {
+        .nav-buttons a {
             font-size: 20px;
             color: #000;
             text-decoration: none;
-            padding: 15px 20px;
+            padding: 15px 20px; 
             margin: 5px;
             border-radius: 10px;
             transition: background-color 0.3s ease;
         }
 
-        .head-buttons a:hover {
+        .nav-buttons a:hover {
             background-color: #e5e5e5;
         }
 
-        main {
+        .header {
             position: relative;
             text-align: center;
             max-width: 100%;
         }
 
-        main img {
+        .header img {
             width: 100%;
             height: auto;
-            max-height: 50%;
+            max-height: 100%;
             object-fit: cover;
         }
 
@@ -71,7 +69,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: #fff;
-            font-size: 3em;
+            font-size: 5vw;
             padding: 20px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
@@ -80,73 +78,46 @@
             font-size: 18px;
             margin: 20px auto;
             padding: 30px;
-            border-radius: 20px;
-            max-width: 800px;
+            border-radius: 10px;
+            max-width: 900px;
             text-align: center;
-            background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 5px;
         }
 
         .features-container {
-            padding-top: 10px;
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
-            padding: 100px;
-            flex-wrap: wrap;
-            margin: 0 auto;
+            justify-content: center;
+            width: 100%;
             max-width: 1000px;
             height: auto;
-            margin-bottom: 0px;
         }
 
-        .feature {
-            display: flex;
+        .feature-card {
             flex-direction: column;
             align-items: center;
             text-align: justify;
-            max-width: 300px;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
             background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             padding: 10px;
         }
 
-        .feature img {
+        .feature-card img {
             display: flex;
             align-items: center;
             width: 100%;
             height: auto;
             border-radius: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .specs {
-            display: flex;
-            flex-direction: column;
-            margin: 0 auto;
-            padding: 30px;
-            align-items: center;
-            border-radius: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            position: relative;
-            height: auto;
-        }
-
-        .specs h2 {
-            grid-column: span 3;
-            text-align: center;
-            font-size: 1.5em;
-        }
-
-        .specs-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            max-width: 100%;
+        .specs-card-container {
+            width: 100%;
+            max-width: 1400px;
+            height: 100%;
+            max-height: 1600px;
         }
 
         .specs-item {
@@ -164,104 +135,163 @@
         }
 
         .acer-name {
-            position: relative;
             text-align: center;
             font-size: 2em;
-            color: #000;
-            margin-bottom: 10px;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 5px;
-            text-align: center;
-            margin-top: 30px;
-        }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Acer</h1>
-        <div class="head-buttons">
-            <a href="https://store.acer.com/en-ph/?internal_source=agw::ph-en&internal_campaign=main_navigation&internal_medium=home::1&internal_content=()::()">Store</a>
-            <a href="https://www.acer.com/ph-en/ai">AI</a>
-            <a href="https://www.acer.com/ph-en#">Products</a>
-            <a href="https://www.acer.com/ph-en/business">Business</a>
-            <a href="https://www.acer.com/ph-en/education">Education</a>
-            <a href="https://www.acer.com/ph-en/support">Support</a>
-            <a href="https://www.acer.com/ph-en/events">Events</a>
+    <nav class="navbar navbar-expand-xl bg-body-tertiary">
+        <div class="container-fluid">
+            <h1>Acer</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="nav-buttons mx-auto">
+                <a href="https://store.acer.com/en-ph/?internal_source=agw::ph-en&internal_campaign=main_navigation&internal_medium=home::1&internal_content=()::()">Store</a>
+                <a href="https://www.acer.com/ph-en/ai">AI</a>
+                <a href="https://www.acer.com/ph-en#">Products</a>
+                <a href="https://www.acer.com/ph-en/business">Business</a>
+                <a href="https://www.acer.com/ph-en/education">Education</a>
+                <a href="https://www.acer.com/ph-en/support">Support</a>
+                <a href="https://www.acer.com/ph-en/events">Events</a>
+            </div>
+          </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
+    <div class="header">
         <img src="https://images.acer.com/is/image/acer/aspire3-banner-7:Secondary-Hero-L" alt="Acer Laptop">
         <div class="aspire">Aspire 3 Intel</div>
-    </main>
-
-    <div class="description">
-        <p>The Aspire 3 is ready for whatever your day brings, whether you're working, studying, or playing. With powerful processors and ample storage, you can tackle any task with ease.</p>
     </div>
 
-    <div class="features-container">
-        <div class="feature">
-            <img src="https://images.acer.com/is/image/acer/PDP_12th-Gen-Intel-Core-processor" alt="12th Gen Intel Core Processor">
-            <h3>Boundless Performance</h3>
-            <p>Experience unmatched adaptability with Intel's scalable client architecture. Whether you're gaming, streaming, or multitasking, the 12th Gen Intel Core mobile PCs deliver seamless performance without compromises. Get ready to elevate your experience!</p>
-        </div>
-        <div class="feature">
-            <img src="https://images.acer.com/is/image/acer/PDP_Intel-Core-i3-processor" alt="Intel Core i3 Processor">
-            <h3>Everywhere Performance</h3>
-            <p>Amplify your day with mobile power designed for every moment. Perfect for gamers, creators, and streamers, the Aspire 3 empowers you to tap into the performance you need—no matter where life takes you. Stay productive and entertained on the go!</p>
-        </div>
-        <div class="feature">
-            <img src="https://images.acer.com/is/image/acer/PDP_DDR4" alt="DDR4 Memory">
-            <h3>Speed Master</h3>
-            <p>Discover the advantages of DDR4 RAM, the current standard for laptops. With faster speeds and higher bandwidth than DDR3, it’s engineered for gaming, video editing, and content creation. Experience lightning-fast load times and smooth multitasking like never before!</p>
-        </div>
-    </div>
-
-    <div class="specs">
-        <div class="acer-name">
-            <b>Acer Aspire 3</b><br> A315-59-35C7
-        </div>
-        <img src="https://static-ecapac.acer.com/media/catalog/product/a/c/acer-aspire-3-a315-44p-non-fingerprint-non-backlit-wallpaper-pure-silver-01-1000x1000_nx.ksjsp.001.png?optimize=high&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500&format=jpeg" alt="Acer Aspire 3 Image">
-        <h2>Specifications</h2>
-        <div class="specs-grid">
-            <div class="specs-item">
-                <b>Operating System:</b><br> Windows 11 Home Single Language
-            </div>
-            <div class="specs-item">
-                <b>Processor:</b><br> Intel® Core™ i3-1215U
-            </div>
-            <div class="specs-item">
-                <b>LCD:</b><br> 15.6" HD Acer ComfyViewLCD
-            </div>
-            <div class="specs-item">
-                <b>Graphics:</b><br> Intel® UHD Graphics
-            </div>
-            <div class="specs-item">
-                <b>Memory:</b><br> 8 GB DDR4 Memory
-            </div>
-            <div class="specs-item">
-                <b>Storage:</b><br> 256GB PCI6 NVMe SSD
-            </div>
-            <div class="specs-item">
-                <b>Battery:</b><br> 40Wh Li-ion Battery
-            </div>
-            <div class="specs-item">
-                <b>WLAN/Bluetooth:</b><br> 802.11ac + BT
-            </div>
-            <div class="specs-item">
-                <b>Optical Drive:</b><br> NA
+    <div class="description mx-auto shadow">
+        <div class="row">
+            <div class="col">
+                <p>
+                    The Aspire 3 is ready for whatever your day brings, whether you're working, studying, or playing. With
+                    powerful processors and ample storage, you can tackle any task with ease.
+                </p>
             </div>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Project 1. All rights reserved.</p>
-    </footer>
+    <div class="features-container align-items-center mx-auto">
+        <div class="row mx-auto justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                <div class="feature-card shadow">
+                    <img src="https://images.acer.com/is/image/acer/PDP_12th-Gen-Intel-Core-processor" class="card-img-top" alt="12th Gen Intel Core Processor">
+                    <div class="feature-body">
+                        <h5 class="feature-title text-center pt-3">Boundless Performance</h5>
+                        <p class="feature-text pt-2">Experience unmatched adaptability with Intel's scalable client architecture. Whether you're gaming,
+                            streaming, or multitasking, the 12th Gen Intel Core mobile PCs deliver seamless performance without
+                            compromises. Get ready to elevate your experience!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                <div class="feature-card shadow">
+                    <img src="https://images.acer.com/is/image/acer/PDP_Intel-Core-i3-processor" class="card-img-top" alt="Intel Core i3 Processor">
+                    <div class="feature-body">
+                        <h5 class="feature-title text-center pt-3">Everywhere Performance</h5>
+                        <p class="feature-text pt-2">Amplify your day with mobile power designed for every moment. Perfect for gamers, creators, and
+                            streamers, the Aspire 3 empowers you to tap into the performance you need—no matter where life takes
+                            you. Stay productive and entertained on the go!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                <div class="feature-card shadow">
+                    <img src="https://images.acer.com/is/image/acer/PDP_DDR4" class="card-img-top" alt="DDR4 Memory">
+                    <div class="feature-body">
+                        <h5 class="feature-title text-center pt-3">Speed Master</h5>
+                        <p class="feature-text pt-2">Discover the advantages of DDR4 RAM, the current standard for laptops. With faster speeds and higher
+                            bandwidth than DDR3, it’s engineered for gaming, video editing, and content creation. Experience
+                            lightning-fast load times and smooth multitasking like never before!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="specs-card-container col-12 col-md-10 col-lg-8 my-4 pt-3 shadow">
+                <div class="text-center">
+                    <div class="acer-name">
+                        <b>Acer Aspire 3</b><br> A315-59-35C7
+                    </div>
+                    <img src="https://static-ecapac.acer.com/media/catalog/product/a/c/acer-aspire-3-a315-44p-non-fingerprint-non-backlit-wallpaper-pure-silver-01-1000x1000_nx.ksjsp.001.png?optimize=high&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500&format=jpeg"
+                        class="img-fluid" width="300" height="300" alt="Acer Aspire 3 Image">
+                </div>
+            
+                <h2 class="text-center mb-3">Specifications</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mx-auto mb-4">
+                    <div class="col">
+                        <div class="specs-item">
+                            <b>Operating System:</b><br> Windows 11 Home Single Language
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="specs-item">
+                            <b>Processor:</b><br> Intel® Core™ i3-1215U
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="specs-item">
+                            <b>LCD:</b><br> 15.6" HD Acer ComfyView LCD
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="specs-item">
+                            <b>Graphics:</b><br> Intel® UHD Graphics
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="specs-item">
+                            <b>Memory:</b><br> 8 GB DDR4 Memory
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="specs-item">
+                            <b>Storage:</b><br> 256GB PCI6 NVMe SSD
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="specs-item">
+                            <b>Battery:</b><br> 40Wh Li-ion Battery
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="specs-item">
+                            <b>WLAN/Bluetooth:</b><br> 802.11ac + BT
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="specs-item">
+                            <b>Optical Drive:</b><br> NA
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <footer>
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+          <p class="text-center text-body-secondary">© 2024 Project 1. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"> </script>
 </body>
 
 </html>
