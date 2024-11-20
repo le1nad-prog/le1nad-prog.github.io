@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attack on Titan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="images/icon.png">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        [data-bs-theme="dark"] {
+            --bs-body-bg: #0F1923;
+        }
+
+        .center-button-container {
+            position: sticky;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            background-color: #6f553f;
+            border-radius: 10px;
+            padding: 5px 10px;
+            font-size: 1.5rem;
+        }
+
+        .center-button-container:hover {
+            background-color: #382b20;
+        }
+
+        .card {
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .characters-name {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+
+        .characters-description {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            line-height: 1.2;
+            text-align: justify;
+        }
+    </style>
+</head> 
+
+<body data-bs-theme="dark" style="background-color: #382b20;">
+    <div class="container-fluid p-0" style="position: relative; width: 100%; overflow: hidden;">
+        <div class="row">
+            <div class="col" style="height: 100vh;">
+                <iframe style="pointer-events: none; margin-left: 50%; transform: translateX(-50%);"
+                    width="100%" max-width="4000px" height="100%"
+                    src="https://www.youtube.com/embed/PS1h973e3WM?si=C5VKceMcGskWS9La&amp;start=20&autoplay=1&mute=1&controls=0&rel=0&disablekb=1&loop=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div style="position: absolute; top: 250px; width: 100%;">
+        <div class="h1 text-center" style="font-size: 150px;">
+            <img src="images/aotText.png" style="width: auto; height: 30vw;"  alt="Attack on Titan">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mx-5">
+            <div class="col">
+                <h1>
+                    <div class="container d-flex justify-content-center align-items-center">
+                        <button type="button" onclick="expandContent()"
+                            class="center-button-container btn-outline-secondary" id="btnExpand">Show Characters</button>
+                    </div>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-4" id="characters" style="display: none;">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4 text-center pt-2" style="font-weight: bold;">
+                    Characters
+                </h1>
+            </div>
+            <div class="row mx-auto" id="charactersCardContainer"></div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <footer class="pt-3">
+            <ul class="nav justify-content-center border-bottom"></ul>
+            <p class="text-center text-body-secondary">© 2024 Project 3. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <script>
+        var characters = [
+            "images/eren.png", "images/mikasa.png", "images/armin.png", "images/connie.png",
+            "images/sasha.png", "images/jean.png", "images/annie.png", "images/ymir.png",
+            "images/christa.png", "images/reiner.png", "images/bertholdt.png", "images/marco.png",
+            "images/shadis.png", "images/levi.png", "images/hange.png", "images/eld.png",
+            "images/oruo.png", "images/gunther.png", "images/petra.png", "images/moblit.png",
+            "images/erwin.png", "images/miche.png", "images/nile.png", "images/hitch.png",
+            "images/marlo.png", "images/dot.png", "images/ian.png", "images/rico.png"
+        ];
+
+        var charactersNames = [
+            "Eren", "Mikasa", "Armin", "Connie", "Sasha", "Jean", "Annie",
+            "Ymir", "Christa", "Reiner", "Bertholdt", "Marco", "Shadis", "Levi",
+            "Hange", "Eld", "Oruo", "Gunther", "Petra", "Moblit", "Erwin",
+            "Miche", "Nile", "Hitch", "Marlo", "Dot", "Ian", "Rico"
+        ];
+
+        var charactersDescriptions = [
+            "A mentally strong and highly motivated youth who is fascinated by the world outside the Wall. He dreams of one day venturing beyond the Wall and exploring the rest of the world.",
+            "Has been inseparable from Eren since he saved her life when she was little. Keeping Eren safe means everything to her, and she wears the scarf that he gave her almost every day.",
+            "A childhood friend to both Eren and Mikasa. Highly intelligent, he is the one who told Eren stories about the world beyond the Wall, but he also dislikes his own physical weakness and cowardice. He was named after his grandfather.",
+            "An outspoken and eager young man who joins the Scout Regiment after hearing Eren talk about them so much. Fairly simple and straightforward in nature, he is quick to express both happiness and anger. Calls himself as a genius but is often unable to read a situation and just gets swept along with events.",
+            "Can appear friendly at first glance, always speaking respectfully and avoiding confrontations with her allies, but actually possesses of quite a wild personality. Coming from a line of hunters, she boasts a voracious appetite and often steals food from the kitchens to stock her horde of snacks.",
+            "Although his nihilistic, oblique remarks stand out, he is a capable fighter, ranked sixth for performance among the Cadet Corps. Rarely seeing eye-to-eye with Eren, they clash over almost everything. He matures as a person during the ongoing fight against the Titans, seeing so many of his comrades fall along the way.",
+            "A member of the 104th Cadet Corps. Always looks fierce and angry, but has a kind side too. When she really gets angry, you'll know about it!",
+            "A member of the 104th Cadet Corps. Has a rough attitude but completely dotes on Christa.",
+            "A member of the 104th Cadet Corps. A gentle young girl who always takes care of those around her. Idolized by all the boys.",
+            "A member of the 104th Cadet Corps.He has a very tough mentality, and deeply trusted by all of his allies.",
+            "A member of the 104th Cadet Corps. Skilled with machinery but lacking in interpersonal skills.",
+            "A member of the 104th Cadet Corps. One of the few who understands Jean, interpreting his rough personality and antagonism toward the others in the Corps in an optimistic fashion.",
+            "Trainer responsible for the education of the 104th Cadet Corps. While he is extremely hard on the cadets, he also has a full understanding of their strengths and weaknesses and appraises them accordingly.",
+            "Lieutenant of the Scout Regiment. Known as the ultimate warrior fighting for mankind, he is trusted implicitly by those beneath him.",
+            "Section Commander of the Scout Regiment.Has some strange ideas, considering being a member of the Scout Regiment, an organization that desires revolution.",
+            "A member of Special Operations. Has a calm, collected personality and long experience in battle, having joined Special Operations ahead of Oruo and Petra. He functions like the second-in-command, taking over when Levi is away.",
+            "A member of Special Operations. Joined Levi's squad at the same time as Eren. Obsessed with Levi he tries to copy everything about him, from appearance though to actions, but Petra is always quick to point out that he doesn't come close to replicating him.",
+            "A member of Special Operations. A taciturn and serious man. Trusts Erwin and Levi implicitly, and loyally completes their every order.",
+            "A member of Special Operations. Loves to mock others when they try to act like Levi.",
+            "Member of the Scout Regiment.Second-in-command to Section Commander Hange, he often struggles to keep his leader in check.",
+            "Commander of the 13th Scout Regiment. Capable of reacting flexibly to any situation, he is trusted and respected by all who fight under his command, including Levi.",
+            "Scout Regiment Section Commander. A taciturn man with the strange habit of sniffing someone when he meets them for the first time and then snorting out a laugh.",
+            "Commander of the Military Police Regiment, who are generally stationed within the Wall Sina region or other walled cities and do not fight the Titans.",
+            "A new recruit in the Military Police Regiment. She can be rude and unruly, not really becoming of a solider, and often mocks others.",
+            "A new recruit in the Military Police Regiment. He has a strong sense of justice, and signed up for the Military Police Regiment not to abuse the power the position offers, but rather to bring such corruption to an end.",
+            "Commander of the Garrison Regiment and the highest authority in the Southern Region, which includes the Trost District.",
+            "Captain in the Elite Regiment. During the opening stages of the battle in the Trost District, he led a group of elites to defend the people feeling through the inner gates.",
+            "Captain in the Elite Regiment. One of the soldiers who encircled Eren after he emerged from the Titan."
+        ];
+
+        for (var i = 0; i < characters.length; i++) {
+            var myContainer = document.getElementById("charactersCardContainer");
+            myContainer.innerHTML +=
+                '<div class="col-xl-6 col-md-6 col-sm-12">' +
+                '<div class="card my-3 rounded p-3" id="character-c' + i + '">' +
+                '<h1 class="agent-name text-center" style="font-size: 1.5rem; margin-bottom: 15px;">' + charactersNames[i] + '</h1>' +
+                '<div class="d-flex align-items-start">' +
+                '<img src="' + characters[i] + '" class="rounded" style="width: 150px; height: auto; object-fit: cover; margin-right: 15px;">' +
+                '<div style="flex: 1;">' +
+                '<p class="agent-description" style="font-size: 1rem; color: #555;">' + charactersDescriptions[i] + '</p>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+        }
+
+        function zoomIn(cardId, nameId) {
+            document.getElementById(cardId).style.transform = "scale(1.1)";
+            document.getElementById(nameId).style.opacity = "1";
+        }
+
+        function zoomOut(cardId, nameId) {
+            document.getElementById(cardId).style.transform = "scale(1)";
+            document.getElementById(nameId).style.opacity = "0";
+        }
+
+        var display = "none";
+
+        function expandContent() {
+            var agents = document.getElementById("characters");
+
+            if (display == "none") {
+                agents.style.display = "block";
+                btnExpand.innerHTML = "Hidden Characters";
+                display = "block";
+            } else {
+                agents.style.display = "none";
+                btnExpand.innerHTML = "Show Characters";
+                display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
