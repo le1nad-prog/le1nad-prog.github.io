@@ -11,6 +11,8 @@
     <style>
         body {
             background: linear-gradient(135deg, #074769, #191a30);
+            background-size: 400% 400%;
+            animation: gradientBG 6s ease infinite;
             color: white;
             font-family: 'Poppins', sans-serif;
             text-align: center;
@@ -19,10 +21,16 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            overflow: hidden;
         }
 
         .error-container {
-            max-width: 600px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            animation: fadeInPage 1.5s forwards;
         }
 
         .error-code {
@@ -54,15 +62,59 @@
             background-color: #008ccd;
             transform: scale(1.1);
         }
+
+        .oops-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+
+        .icon-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        
+        @keyframes fadeInPage {
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="error-container">
-        <!-- <h1 class="error-code animate__animated animate__bounceIn">404</h1>
-        <p class="error-message animate__animated animate__fadeInRight">Oops! The page you're looking for doesn't exist.</p>
-        <a href="index.html" class="home-button animate__animated animate__fadeInUp">Go Back to Homepage</a> -->
-        <img src="images/icon.png" class="animate__animated animate__fadeIn" alt="Testing">
+        <div class="row">
+            <div class="col">
+                <div class="icon-row animate__animated animate__bounce">
+                    <h1 class="error-code animate__animated animate__bounce">4</h1>
+                    <div class="oops-icon">🙈</div>
+                    <h1 class="error-code animate__animated animate__bounce">4</h1>
+                </div>
+                <p class="error-message animate__animated animate__fadeInUp">Oops! The page you're looking for doesn't exist.</p>
+                <p class="error-message">Don’t worry, I’ll help you find your way back.</p>
+                <a href="index.html" class="home-button animate__animated animate__fadeInUp">Go Back to Homepage</a>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

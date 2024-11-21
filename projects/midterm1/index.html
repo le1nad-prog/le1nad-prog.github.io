@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Attack on Titan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="images/icon.png">
     <style>
         * {
@@ -19,52 +19,43 @@
             --bs-body-bg: #0F1923;
         }
 
-        .center-button-container {
-            position: sticky;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-            background-color: #6f553f;
-            border-radius: 10px;
-            padding: 5px 10px;
-            font-size: 1.5rem;
-        }
-
-        .center-button-container:hover {
-            background-color: #382b20;
-        }
-
         .card {
             position: relative;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-height: 700px;
+            height: 100%;
+            justify-content: space-evenly;
         }
 
         .card:hover {
             transform: scale(1.05);
         }
 
-        .characters-name {
+        .character-name {
             font-size: 1rem;
             font-weight: bold;
-            margin: 0;
             text-align: center;
         }
 
-        .characters-description {
+        .character-description {
             font-size: 0.8rem;
-            margin-top: 5px;
             line-height: 1.2;
             text-align: justify;
         }
-    </style>
-</head> 
 
-<body data-bs-theme="dark" style="background-color: #382b20;">
+        .animate__fadeInUp {
+			animation-duration: 1.5s;
+			animation-timing-function: ease-in-out; 
+		}
+    </style>
+</head>
+
+<body data-bs-theme="dark" style="background-color: black;">
     <div class="container-fluid p-0" style="position: relative; width: 100%; overflow: hidden;">
         <div class="row">
             <div class="col" style="height: 100vh;">
-                <iframe style="pointer-events: none; margin-left: 50%; transform: translateX(-50%);"
-                    width="100%" max-width="4000px" height="100%"
+                <iframe style="pointer-events: none; margin-left: 50%; transform: translateX(-50%);" width="4000px"
+                    height="100%"
                     src="https://www.youtube.com/embed/PS1h973e3WM?si=C5VKceMcGskWS9La&amp;start=20&autoplay=1&mute=1&controls=0&rel=0&disablekb=1&loop=1"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -73,48 +64,67 @@
             </div>
         </div>
     </div>
-
     <div style="position: absolute; top: 250px; width: 100%;">
-        <div class="h1 text-center" style="font-size: 150px;">
-            <img src="images/aotText.png" style="width: auto; height: 30vw;"  alt="Attack on Titan">
+        <div class="text-center mx-auto">
+            <img src="images/aotText.png" style="width: auto; height: 30vw;" alt="Attack on Titan">
         </div>
     </div>
-
-    <div class="container">
-        <div class="row mx-5">
-            <div class="col">
-                <h1>
-                    <div class="container d-flex justify-content-center align-items-center">
-                        <button type="button" onclick="expandContent()"
-                            class="center-button-container btn-outline-secondary" id="btnExpand">Show Characters</button>
-                    </div>
-                </h1>
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <div class="col text-center wow animate__animated animate__fadeInUp">
+                <img src="images/aotLogo.png" style="width: auto; height: 150px;" alt="Attack on Titan">
             </div>
         </div>
     </div>
-    <div class="container pt-4" id="characters" style="display: none;">
+    <div class="container text-center pt-4 wow animate__animated animate__fadeInUp">
         <div class="row">
             <div class="col">
-                <h1 class="display-4 text-center pt-2" style="font-weight: bold;">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="display-4 text-center mb-3" style="font-weight: bold; color: #013057;">
+                            Synopsis
+                        </h1>
+                        <p class="text-light fs-5 pt-2">
+                            Over 100 years ago, a natural predator of humanity appeared: the Titans, giant humanoid but mindless
+                            monsters whose sole purpose of existence seemed to be to devour humans. There was an insurmountable gap in
+                            power between them and mankind, and as a result, humanity was rapidly exterminated to the brink of
+                            extinction. The survivors responded by constructing three concentric walls: Wall Maria, Wall Rose and Wall
+                            Sina, which graced them with a century of peace. However, one day a Colossal Titan far larger than any other
+                            seen before breached the outer wall, allowing the smaller Titans to invade the human territory and forcing
+                            the survivors to retreat to the inner walls. Eren Jaeger, a boy whose mother was eaten during the invasion,
+                            vowed to wipe every last Titan off the face of the Earth, and joined the military determined to exact his
+                            revenge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5" id="characters">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4 text-center mb-3 wow animate__animated animate__fadeInUp" style="font-weight: bold; color: #013057;">
                     Characters
                 </h1>
             </div>
-            <div class="row mx-auto" id="charactersCardContainer"></div>
+            <div class="row mx-auto wow animate__animated animate__fadeInUp" id="charactersCardContainer"></div>
         </div>
     </div>
-    
     <div class="container-fluid">
         <footer class="pt-3">
             <ul class="nav justify-content-center border-bottom"></ul>
-            <p class="text-center text-body-secondary">© 2024 Project 3. All rights reserved.</p>
+            <p class="text-center text-body-secondary pt-3">© 2024 Project 3. All rights reserved.</p>
         </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <script>
+        new WOW().init();
+
         var characters = [
             "images/eren.png", "images/mikasa.png", "images/armin.png", "images/connie.png",
             "images/sasha.png", "images/jean.png", "images/annie.png", "images/ymir.png",
@@ -126,10 +136,10 @@
         ];
 
         var charactersNames = [
-            "Eren", "Mikasa", "Armin", "Connie", "Sasha", "Jean", "Annie",
-            "Ymir", "Christa", "Reiner", "Bertholdt", "Marco", "Shadis", "Levi",
-            "Hange", "Eld", "Oruo", "Gunther", "Petra", "Moblit", "Erwin",
-            "Miche", "Nile", "Hitch", "Marlo", "Dot", "Ian", "Rico"
+            "Eren Jaeger", "Mikasa Ackermann", "Armin Arlert", "Connie Springer", "Sasha Braus", "Jean Kirschtein", "Annie Leonhart",
+            "Ymir", "Christa Lenz", "Reiner Braun", "Bertholdt Hoover", "Marco Bodt", "Keith Shadis", "Levi Ackermann",
+            "Hange Zoe", "Eld Gin", "Oruo Bozad", "Gunther Schultz", "Petra", "Moblit", "Erwin Smith",
+            "Miche Zacharius", "Nile Dawk", "Hitch", "Marlo Freudenberg", "Dot Pyxis", "Ian Dietrich", "Rico Brzenska"
         ];
 
         var charactersDescriptions = [
@@ -166,14 +176,12 @@
         for (var i = 0; i < characters.length; i++) {
             var myContainer = document.getElementById("charactersCardContainer");
             myContainer.innerHTML +=
-                '<div class="col-xl-6 col-md-6 col-sm-12">' +
-                '<div class="card my-3 rounded p-3" id="character-c' + i + '">' +
-                '<h1 class="agent-name text-center" style="font-size: 1.5rem; margin-bottom: 15px;">' + charactersNames[i] + '</h1>' +
-                '<div class="d-flex align-items-start">' +
-                '<img src="' + characters[i] + '" class="rounded" style="width: 150px; height: auto; object-fit: cover; margin-right: 15px;">' +
-                '<div style="flex: 1;">' +
-                '<p class="agent-description" style="font-size: 1rem; color: #555;">' + charactersDescriptions[i] + '</p>' +
-                '</div>' +
+                '<div class="col-xl-4 col-md-6 col-sm-12 mb-3">' +
+                '<div class="card rounded p-3 position-relative" id="character-c' + i + '">' +
+                '<h1 class="character-name text-center" style="font-size: 1.5rem; color: white;">' + charactersNames[i] + '</h1>' +
+                '<img src="' + characters[i] + '" class="rounded mx-auto d-block" style="width: 100%; height: 100%; object-fit: cover;">' +
+                '<div>' +
+                '<p class="character-description justify-center" style="font-size: 1rem; color: white; text-indent: 3rem;">' + charactersDescriptions[i] + '</p>' +
                 '</div>' +
                 '</div>' +
                 '</div>';
@@ -188,23 +196,6 @@
             document.getElementById(cardId).style.transform = "scale(1)";
             document.getElementById(nameId).style.opacity = "0";
         }
-
-        var display = "none";
-
-        function expandContent() {
-            var agents = document.getElementById("characters");
-
-            if (display == "none") {
-                agents.style.display = "block";
-                btnExpand.innerHTML = "Hidden Characters";
-                display = "block";
-            } else {
-                agents.style.display = "none";
-                btnExpand.innerHTML = "Show Characters";
-                display = "none";
-            }
-        }
-
     </script>
 
 </body>

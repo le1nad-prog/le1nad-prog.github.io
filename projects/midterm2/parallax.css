@@ -1,0 +1,81 @@
+.keyart,
+.keyart_layer {
+	height: 1000px;
+}
+
+.keyart {
+	position: relative;
+	z-index: 10;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+	transform: translate3d(0, 0, 0);
+	transition: transform 0.1s ease-out;
+}
+
+.keyart_layer.parallax {
+	position: fixed;
+}
+
+.main-content {
+	width: 100%;
+	position: absolute;
+	z-index: 200;
+}
+
+#keyart-0 {
+	background-image: url(images/0.png);
+}
+
+#keyart-1 {
+	background-image: url(images/1.png);
+}
+
+#keyart-2 {
+	background-image: url(images/2.png);
+}
+
+#keyart-3 {
+	background-image: url(images/3.png);
+}
+
+#keyart-4 {
+	background-image: url(images/4.png);
+}
+
+#keyart-5 {
+	background-image: url(images/5.png);
+}
+
+#keyart-6 {
+	background-image: url(images/6.png);
+}
+
+#keyart-7 {
+	background-image: url(images/7.png);
+}
+
+#keyart-8 {
+	background-image: url(images/8.png);
+}
+
+#keyart-9 {
+	background-image: url(images/9.png);
+}
+
+#keyart-10 {
+	background-image: url(images/10.png);
+}
+
+#keyart-11 {
+	background-image: url(images/logoText.png);
+}
+
+#keyart-scrim {
+	opacity: 0;
+}

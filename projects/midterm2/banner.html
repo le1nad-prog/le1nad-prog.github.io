@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="parallax.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="images/icon.png">
+    <title>Jujutsu Kaisen</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+		.textLogo {
+			opacity: 1;
+			transform: scale(1);
+			transition: opacity 0.3s ease, transform 0.3s ease;
+		}
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #4a3c88;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .card-text {
+            color: #eaeaea;
+            font-size: 1.2rem;
+			text-align: justify;
+			text-indent: 2em;
+        }
+
+		.center-button-container {
+			position: sticky;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+			background-color: #564a94;
+			border-radius: 10px;
+			padding: 5px 10px;
+			font-size: 1.5rem;
+		}
+
+		.center-button-container:hover {
+			background-color: #564a94;
+		}
+
+		.animate__fadeInUp {
+			animation-duration: 1.5s;
+			animation-timing-function: ease-in-out; 
+		}
+    </style>
+</head>
+
+<body data-bs-theme="dark" style="background-color: #27254c;">
+
+    <section>
+        <div class="keyart" id="parallax">
+            <div class="keyart_layer parallax" id="keyart-0" data-speed="50"></div>
+            <div class="keyart_layer parallax" id="keyart-1" data-speed="40"></div>
+            <div class="keyart_layer parallax" id="keyart-2" data-speed="30"></div>
+            <div class="keyart_layer parallax" id="keyart-3" data-speed="20"></div>
+            <div class="keyart_layer parallax" id="keyart-4" data-speed="10"></div>
+            <div class="keyart_layer parallax" id="keyart-5" data-speed="0"></div>
+            <div class="keyart_layer parallax" id="keyart-6" data-speed="-10"></div>
+            <div class="keyart_layer parallax" id="keyart-7" data-speed="-20"></div>
+            <div class="keyart_layer parallax" id="keyart-8" data-speed="-30"></div>
+            <div class="keyart_layer parallax" id="keyart-9" data-speed="-40"></div>
+            <div class="keyart_layer parallax" id="keyart-10" data-speed="-50"></div>
+            <div class="keyart_layer parallax" id="keyart-11" data-speed="-60"></div>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div style="height: auto; background-color:#27254c; overflow: hidden;">
+            <div class="container-fluid text-center pt-5">
+                <div class="row">
+                    <div class="textLogo wow animate__animated animate__zoomIn">
+                        <img src="images/textLogo.png" width="450px" height="100%" alt="Jujutsu Kaisen">
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center pt-4 wow animate__animated animate__fadeInUp">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+								<h1 class="card-title">Synopsis</h1>
+								<p class="card-text pt-3">
+									Idly indulging in baseless paranormal activities with the Occult Club, high schooler
+									Yuuji Itadori spends his days at either the clubroom or the hospital, where he visits
+									his bedridden grandfather. However, this leisurely lifestyle soon takes a turn for the
+									strange when he unknowingly encounters a cursed item. Triggering a chain of supernatural
+									occurrences, Yuuji finds himself suddenly thrust into the world of Curses—dreadful beings
+									formed from human malice and negativity—after swallowing the said item, revealed to be a
+									finger belonging to the demon Sukuna Ryoumen, the King of Curses.
+								</p>
+								<p class="card-text">
+									Yuuji experiences first-hand the threat these Curses pose to society as he discovers his
+									own newfound powers. Introduced to the Tokyo Prefectural Jujutsu High School, he begins to
+									walk down a path from which he cannot return—the path of a Jujutsu sorcerer.
+								</p>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="container d-flex justify-content-center align-items-center wow animate__animated animate__fadeInUp">
+				<button type="button" onclick="expandContent()" class="center-button-container btn-outline-secondary"
+				  id="btnExpand">View more</button>
+			</div>
+			<div class="container pt-2" id="characters" style="display: none;">
+				<div class="row">
+				  <div class="col">
+					<h1 class="display-5 text-center py-2 wow animate__animated animate__fadeInUp" style="font-weight: bold;">
+						Characters
+					</h1>
+				  </div>
+				  <div class="row mx-auto wow animate__animated animate__fadeInUp" id="charactersCardContainer"></div>
+				</div>
+			</div>
+			<div class="container-fluid mx-auto">
+				<footer class="footer">
+					<ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+					<p class="align-items-center text-center">© 2024 Daniel's Portfolio. All rights reserved.</p>
+				</footer>
+			</div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	
+    <script>
+        new WOW().init();
+
+		var characters = [
+            "images/aida.jpg", "images/akari.jpg", "images/aoi.jpg",
+            "images/chisaki.jpg", "images/chousou.jpg", "images/dagon.jpg",
+			"images/esou.jpg", "images/finger.jpg", "images/fujinuma.jpg",
+            "images/gojo.jpg", "images/hanami.jpg", "images/jougo.jpg",
+			"images/junpei.jpg", "images/juuzou.jpg", "images/kasumi.jpg",
+            "images/kechizu.jpg", "images/kinji.jpg", "images/kiyotaka.jpg",
+			"images/koukichi.jpg", "images/mahito.jpg", "images/mai.jpg",
+            "images/maki.jpg", "images/masamichi.jpg", "images/megumi.jpg",
+			"images/mei.jpg", "images/momo.jpg", "images/nanami.jpg",
+            "images/naobito.jpg", "images/nobara.jpg", "images/noritoshi.jpg",
+			"images/panda.jpg", "images/rika.jpg", "images/shouko.jpg",
+            "images/shouta.jpg", "images/suguru.jpg", "images/sukuna.jpg",
+			"images/tadashi.jpg", "images/takeshi.jpg", "images/takuma.jpg",
+            "images/toge.jpg", "images/tsumiki.jpg", "images/uraume.jpg",
+			"images/utahime.jpg", "images/wasuke.jpg", "images/yoshinobu.jpg",
+            "images/yuji.jpg", "images/yuki.jpg", "images/yuuta.jpg",
+        ];
+
+        var charactersNames = [
+            "Aida", "Akari Nitta", "Aoi Toudou", "Chisaki Okazaki", "Chousou",
+			"Dagon", "Esou", "Finger Bearer", "Fujinuma", "Satoru Gojo", "Hanami",
+			"Jougo", "Junpei Yoshino", "Juuzou Kumiya", "Kasumi Miwa", "Kechizu",
+			"Kinji Hakari", "Kiyotaka Ijichi", "Koukici Muta", "Mahito", "Zenin Mai",
+			"Maki Zenin", "Masamichi Yaga", "Megumi Fushiguro", "Mei Mei", "Momo Nishimiya",
+			"Kento Nanami", "Naobito Zenin", "Nobara Kugisaki", "Noritoshi Kamo", "Panda", "Rika Orimoto",
+			"Shoko Ieiri", "Shouta Itou", "Getou Suguru", "Sukuna Ryoumen", "Tadashi Okazaki",
+			"Takeshi Iguchi", "Ino Takuma", "Inumaki Toge", "Tsumiki Fushiguro", "Uraume",
+			"Utahime Iori", "Wasuke Itadori", "Yoshinobu Gakuganji", "Yuji Itadori", "Shoko Ieiri",
+			"Tsukumo Yuki"
+        ];
+
+        for (var i = 0; i < charactersNames.length; i++) {
+            var myContainer = document.getElementById("charactersCardContainer");
+            myContainer.innerHTML +=
+                '<div class="col-xl-3 col-md-4 col-sm-6 col-xs-6 mb-3 wow animate__animated animate__fadeInUp">' +
+                '<div class="card rounded p-3 position-relative" id="character-c' + i + '">' +
+                '<h1 class="character-name text-center" style="font-size: 1.5rem; color: white;">' + charactersNames[i] + '</h1>' +
+                '<img src="' + characters[i] + '" class="rounded mx-auto d-block" style="width: 100%; height: auto; object-fit: cover;">' +
+                '<div>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+        }
+
+		var display = "none";
+
+    	function expandContent() {
+      	var character = document.getElementById("characters");
+
+			if (display == "none") {
+				character.style.display = "block";
+				btnExpand.innerHTML = "View less";
+				display = "block";
+			} else {
+				character.style.display = "none";
+				btnExpand.innerHTML = "View more";
+				display = "none";
+			}
+		}
+    </script>
+	
+</body>
+
+</html>
