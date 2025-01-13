@@ -20,17 +20,25 @@
             scroll-behavior: smooth;
         }
 
-        body {
-            background: linear-gradient(135deg, #074769, #191a30);
-            color: white;
-            width: 100%;
+        html, body {
             height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #074769, #191a30);
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            overflow-x: hidden;
         }
 
         .navbar {
             margin: 0 40px;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 0 40px;
+            width: 100%;
         }
 
         .navbar-brand {
@@ -55,6 +63,10 @@
             color: #00abf0;
         }
 
+        .container {
+            flex-grow: 1;
+        }
+
         .profile img {
             border-radius: 50%;
             width: 100%;
@@ -68,7 +80,6 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            text-align: justify;
             margin-bottom: 0;
         }
 
@@ -123,14 +134,6 @@
             box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
         }
 
-        .footer {
-            margin: 20px 0;
-        }
-
-        .footer p {
-            color: white;
-        }
-
         @keyframes fadeInRight {
             from {
                 opacity: 0;
@@ -141,7 +144,6 @@
                 transform: translateX(0);
             }
         }
-        
     </style>
 </head>
 
@@ -169,28 +171,26 @@
         </div>
     </nav>
 
-    <div class="container d-flex justify-content-center align-items-center p-3 my-1 mx-auto overflow-hidden">
-        <div class="row text-center">
+    <div class="container d-flex justify-content-center align-items-center p-3 my-1 mx-auto">
+        <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-12 d-flex justify-content-center mb-3 mb-lg-0">
                 <div class="profile">
                     <img src="images/profile.jpg" class="animate__animated animate__fadeIn" alt="Profile">
                 </div>
             </div>
-            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center text-align-center mx-auto my-4">
-                <div class="info">
-                    <div class="greetings">
-                        <h1 class="greet">Hello, I'm Daniel!</h1>
-                        <h3 class="greet">BSIT Student</h3>
-                        <hr style="width: 50px; height: 3px; background-color: #00abf0; margin: auto;">
-                        <p class="animate__animated animate__fadeInRight">You can call me Dan! I'm a 20-year-old in my junior year at the Polytechnic University of the Philippines, currently studying web development. This website is for educational purposes, designed to showcase my skills and support my journey toward becoming a professional software developer.</p>
-                    </div>  
-                    <div class="contact-buttons">
-                        <a class="animate__animated animate__fadeInRight" href="https://www.facebook.com/daniel.melitante.15/"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a class="animate__animated animate__fadeInRight" href="https://www.instagram.com/only_leinad/"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="animate__animated animate__fadeInRight" href="https://x.com/danmelitante"><i class="fa-brands fa-twitter"></i></a>
-                        <a class="animate__animated animate__fadeInRight" href="https://mail.google.com/mail/?view=cm&fs=1&to=melitandedaniel1215@gmail.com&su=Subject%20Here&body=Message%20Here"><i class="fa-solid fa-envelope"></i></a>
-                        <a class="animate__animated animate__fadeInRight" href="https://github.com/le1nad-prog"><i class="fa-brands fa-github"></i></a>
-                    </div>
+            <div class="col-lg-6 col-12 d-flex flex-column align-items-center">
+                <div class="greetings">
+                    <h1 class="greet">Hello, I'm Daniel!</h1>
+                    <h3 class="greet">BSIT Student</h3>
+                    <hr style="width: 50px; height: 3px; background-color: #00abf0; margin: auto;">
+                    <p class="animate__animated animate__fadeInRight">You can call me Dan! I'm a 20-year-old in my junior year at the Polytechnic University of the Philippines, currently studying web development. This website is for educational purposes, designed to showcase my skills and support my journey toward becoming a professional software developer.</p>
+                </div>
+                <div class="contact-buttons">
+                    <a class="animate__animated animate__fadeInRight" href="https://www.facebook.com/daniel.melitante.15/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="animate__animated animate__fadeInRight" href="https://www.instagram.com/only_leinad/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="animate__animated animate__fadeInRight" href="https://x.com/danmelitante"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="animate__animated animate__fadeInRight" href="https://mail.google.com/mail/?view=cm&fs=1&to=melitandedaniel1215@gmail.com&su=Subject%20Here&body=Message%20Here"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="animate__animated animate__fadeInRight" href="https://github.com/le1nad-prog"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>

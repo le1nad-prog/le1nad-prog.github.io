@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="icon" href="./images/icon.png">
+    <link rel="icon" href="images/icon.png">
     <style>
         * {
             font-family: 'Poppins', sans-serif;
@@ -21,17 +21,25 @@
             scroll-behavior: smooth;
         }
 
-        body {
-            background: linear-gradient(135deg, #074769, #191a30);
-            color: white;
-            width: 100%;
+        html, body {
             height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #074769, #191a30);
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            overflow-x: hidden;
         }
 
         .navbar {
             margin: 0 40px;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 0 40px;
+            width: 100%;
         }
 
         .navbar-brand {
@@ -56,6 +64,10 @@
             color: #00abf0;
         }
 
+        .container {
+            flex-grow: 1;
+        }
+
         .profile img {
             border-radius: 50%;
             width: 100%;
@@ -76,14 +88,6 @@
 
         .btn {
             background-color: #00abf0;
-        }
-
-        .footer {
-            margin: 20px 0;
-        }
-
-        .footer p {
-            color: white;
         }
 
         @keyframes fadeInRight {
@@ -123,8 +127,8 @@
         </div>
     </nav>
 
-    <div class="container d-flex justify-content-center align-items-center p-3 my-1 mx-auto overflow-hidden">
-        <div class="row text-center">
+    <div class="container d-flex justify-content-center align-items-center p-3 my-1 mx-auto">
+        <div class="row text-center justify-content-center align-items-center">
             <div class="col-lg-6 col-12 d-flex justify-content-center mb-3 mb-lg-0">
                 <div class="profile">
                     <img src="images/profile.jpg" class="animate__animated animate__fadeIn" alt="Profile">
@@ -143,7 +147,7 @@
                                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
                                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                </div>
+                                </div>  
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="1000">
                                         <img src="images/gadget.png" class="d-block w-100" alt="Project 1">
