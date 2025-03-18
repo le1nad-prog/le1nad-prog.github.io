@@ -37,18 +37,25 @@
         }
 
         .container {
-            margin-top: 175px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 15px auto;
+            background: linear-gradient(135deg, #0a4c70, #1b1c34);
+            border-radius: 30px;
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);
         }
 
         .navbar {
-            margin: 0 40px;
-            background: rgba(7, 71, 105, 1);
+            margin: 20px auto;
             backdrop-filter: blur(80px);
-            padding: 0 40px;
             width: 100%;
-            position: fixed;
-            top: 0;
+            max-width: 1200px;
             z-index: 1000;
+            background: linear-gradient(135deg, #0a4c70, #1b1c34);
+            border-radius: 30px;
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);
         }
 
         .navbar-brand {
@@ -75,11 +82,12 @@
         }
 
         .profile img {
-            border-radius: 50%;
             width: 100%;
             height: auto;
             max-width: 400px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);
         }
 
         .aboutMe img {
@@ -134,19 +142,23 @@
             height: 40px;
             background-color: transparent;
             border: 2px solid #00abf0;
-            border-radius: 50%;
             font-size: 20px;
             color: #00abf0;
             text-decoration: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s, box-shadow 0.3s;
+            background: linear-gradient(135deg, #0a4c70, #1b1c34);
+            border-radius: 50%;
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                        6px 6px 12px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
         }
 
         .contact-buttons a:hover {
             transform: scale(1.1);
-            background-color: #00abf0;
+            box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.6),
+                inset 4px 4px 10px rgba(255, 255, 255, 0.1);
+            background: #00abf0;
             color: white;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
         }
 
         .project-buttons {
@@ -199,7 +211,7 @@
 <body>
     <nav class="navbar navbar-expand-lg mx-auto">
         <div class="container-fluid p-3">
-            <a class="navbar-brand" href="index.html">Daniel</a>
+            <a class="navbar-brand ms-2" href="index.html">Daniel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
@@ -224,7 +236,7 @@
     </nav>
 
     <div class="container pb-5 mb-5">
-        <div class="row">
+        <div class="row pt-5">
             <div class="col-lg-6 col-12">
                 <div class="profile">
                     <img src="images/profile.jpg" class="animate__animated animate__fadeIn" alt="Profile">
@@ -237,9 +249,10 @@
                     <hr style="width: 50px; height: 3px; background-color: #00abf0; margin: auto;">
                     <div class="contact-buttons pt-3">
                         <a class="animate__animated animate__fadeInRight"
-                            href="https://www.facebook.com/daniel.melitante.15/"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a class="animate__animated animate__fadeInRight" href="https://www.instagram.com/only_leinad/"><i
-                                class="fa-brands fa-instagram"></i></a>
+                            href="https://www.facebook.com/daniel.melitante.15/"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="animate__animated animate__fadeInRight"
+                            href="https://www.instagram.com/only_leinad/"><i class="fa-brands fa-instagram"></i></a>
                         <a class="animate__animated animate__fadeInRight" href="https://x.com/danmelitante"><i
                                 class="fa-brands fa-twitter"></i></a>
                         <a class="animate__animated animate__fadeInRight"
@@ -257,9 +270,12 @@
         <div class="row flex-column-reverse flex-lg-row">
             <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center mx-auto">
                 <h1 class="mt-4">About Me</h1>
-                <p class="animate__animated animate__fadeInRight d-flex justify-content-center align-items-center mt-3" style="text-align: justify; text-indent: 50px;">Hello, I'm Daniel G. Melitante and you can call me Dan! I'm a 21-years-old in my
+                <p class="animate__animated animate__fadeInRight d-flex justify-content-center align-items-center mt-3"
+                    style="text-align: justify; text-indent: 50px;">Hello, I'm Daniel G. Melitante and you can call me
+                    Dan! I'm a 21-years-old in my
                     junior year at the Polytechnic University of the Philippines, currently studying web
-                    and appication development. This website is for educational purposes, designed to showcase my skills and
+                    and appication development. This website is for educational purposes, designed to showcase my skills
+                    and
                     support my journey toward becoming a professional software engineer and developer.</p>
             </div>
             <div class="aboutMe col-lg-6 col-12 d-flex justify-content-center align-items-center mx-auto">
@@ -326,33 +342,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
-    <!-- <script>
-
-        function expandWebDev() {
-            var webDevelopment = document.getElementById("webDevelopment");
-
-            if (webDevelopment.classList.contains("d-none")) {
-                webDevelopment.classList.remove("d-none");
-                webDevelopment.classList.add("d-block");
-            } else {
-                webDevelopment.classList.remove("d-block");
-                webDevelopment.classList.add("d-none");
-            }
-        }
-
-        function expandAppDev() {
-            var webDevelopment = document.getElementById("appDevelopment");
-
-            if (webDevelopment.classList.contains("d-none")) {
-                webDevelopment.classList.remove("d-none");
-                webDevelopment.classList.add("d-block");
-            } else {
-                webDevelopment.classList.remove("d-block");
-                webDevelopment.classList.add("d-none");
-            }
-        }
-    </script> -->
 </body>
 
 </html>
