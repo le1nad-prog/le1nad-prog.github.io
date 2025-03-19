@@ -95,7 +95,8 @@
             width: 100%;
             height: auto;
             max-width: 400px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);
         }
 
         .greetings {
@@ -211,7 +212,7 @@
 <body>
     <nav class="navbar navbar-expand-lg mx-auto">
         <div class="container-fluid p-3">
-            <a class="navbar-brand ms-2" href="index.html">Daniel</a>
+            <a class="navbar-brand ms-3" href="index.html">Daniel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
@@ -266,17 +267,15 @@
         </div>
     </div>
 
-    <div class="container py-5 my-5" id="about">
+    <div class="container p-5 my-5" id="about">
         <div class="row flex-column-reverse flex-lg-row">
             <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center mx-auto">
                 <h1 class="mt-4">About Me</h1>
                 <p class="animate__animated animate__fadeInRight d-flex justify-content-center align-items-center mt-3"
-                    style="text-align: justify; text-indent: 50px;">Hello, I'm Daniel G. Melitante and you can call me
-                    Dan! I'm a 21-years-old in my
-                    junior year at the Polytechnic University of the Philippines, currently studying web
+                    style="font-size: 18px; color: white; text-align: justify; text-indent: 50px; line-height: 1.6;">Hello, I'm Daniel G. Melitante and you can call me
+                    Dan! I'm a 21-years-old in my junior year at the Polytechnic University of the Philippines, currently studying web
                     and appication development. This website is for educational purposes, designed to showcase my skills
-                    and
-                    support my journey toward becoming a professional software engineer and developer.</p>
+                    and support my journey toward becoming a professional software engineer and developer.</p>
             </div>
             <div class="aboutMe col-lg-6 col-12 d-flex justify-content-center align-items-center mx-auto">
                 <img src="images/profile2.jpg" alt="profile2">
@@ -284,35 +283,145 @@
         </div>
     </div>
 
-    <div class="container py-5 my-5" id="projects">
+    <div class="container py-5 my-5 mx=auto" id="projects">
         <div class="row">
-            <div class="col d-flex justify-content-center">
-                <h1>Projects</h1>
+            <div class="col d-flex justify-content-center align-items-center ms-3">
+                <h4 style="color: #00abf0;">Projects</h4>
             </div>
         </div>
-        <div class="row pt-5">
-            <div class="webDevContainer col-lg-6 col-12 d-flex flex-column justify-content-center mx-auto pt-5">
-                <h3 class="d-flex justify-content-center">Web Development</h3>
-                <div class="project-buttons pt-3 d-flex flex-column justify-content-center align-items-center">
-                    <a href="projects/webDevelopment/project1/index.html"><button class="animate__animated animate__fadeInRight">P1</button></a> 
-                    <a href="projects/webDevelopment/project2/index.html"><button class="animate__animated animate__fadeInRight">P2</button></a> 
-                    <a href="projects/webDevelopment/project3/index.html"><button class="animate__animated animate__fadeInRight">P3</button></a> 
-                    <a href="projects/webDevelopment/project4/index.html"><button class="animate__animated animate__fadeInRight">P4</button></a> 
-                    <a href="projects/webDevelopment/midterm1/index.html"><button class="animate__animated animate__fadeInRight">M1</button></a> 
-                    <a href="projects/webDevelopment/midterm2/index.html"><button class="animate__animated animate__fadeInRight">M2</button></a> 
+        <div class="row pt-2 mx-auto">
+            <div class="col d-flex justify-content-center align-items-center">
+                <h3>Web Development</h3>
+            </div>
+        </div>
+        <div class="row pt-3 mx-auto">
+            <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center mx-auto">
+                <div class="card border-0 shadow-lg position-relative" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                    <img src="images/api.png" class="card-img-top" alt="Game Image">
+                    <div class="card-body text-center p-2">
+                        <p class="text-muted small mb-1">Project</p>
+                        <h6 class="mb-2">Project</h6>
+                    </div>
+                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                        6px 6px 12px rgba(255, 255, 255, 0.1); background-color: #00abf0;">
+                        Explore
+                    </button>
                 </div>
             </div>
-            <div class="appDevContainer col-lg-6 col-12 d-flex flex-column justify-content-center mx-auto pt-5">
-                <h3 class="d-flex justify-content-center">App Development</h3>
-                <div class="project-buttons pt-3 d-flex flex-column justify-content-center align-items-center">
-                    <a href="404.html"><button class="animate__animated animate__fadeInRight">A1</button></a>
-                    <a href="404.html"><button class="animate__animated animate__fadeInRight">A2</button></a>
-                    <a href="404.html"><button class="animate__animated animate__fadeInRight">A3</button></a>
-                    <a href="404.html"><button class="animate__animated animate__fadeInRight">A4</button></a>
-                    <a href="404.html"><button class="animate__animated animate__fadeInRight">A5</button></a>
-                    <a href="404.html"><button class="animate__animated animate__fadeInRight">A6</button></a>
+            <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center mx-auto">
+                <div class="card border-0 shadow-lg position-relative" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                    <img src="images/api.png" class="card-img-top" alt="Game Image">
+                    <div class="card-body text-center p-2">
+                        <p class="text-muted small mb-1">Project</p>
+                        <h6 class="mb-2">Project</h6>
+                    </div>
+                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                        6px 6px 12px rgba(255, 255, 255, 0.1); background-color: #00abf0">
+                        Explore
+                    </button>
                 </div>
             </div>
+            <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center mx-auto">
+                <div class="card border-0 shadow-lg position-relative" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                    <img src="images/api.png" class="card-img-top" alt="Game Image">
+                    <div class="card-body text-center p-2">
+                        <p class="text-muted small mb-1">Project</p>
+                        <h6 class="mb-2">Project</h6>
+                    </div>
+                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                        6px 6px 12px rgba(255, 255, 255, 0.1); background-color: #00abf0">
+                        Explore
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center mx-auto">
+                <div class="card border-0 shadow-lg position-relative" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                    <img src="images/api.png" class="card-img-top" alt="Game Image">
+                    <div class="card-body text-center p-2">
+                        <p class="text-muted small mb-1">Project</p>
+                        <h6 class="mb-2">Project</h6>
+                    </div>
+                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                        6px 6px 12px rgba(255, 255, 255, 0.1); background-color: #00abf0">
+                        Explore
+                    </button>
+                </div>
+            </div>                  
+        </div>
+        <div class="row pt-5 mx-auto">
+            <div class="col d-flex justify-content-center align-items-center">
+                <h3>Web Development</h3>
+            </div>
+        </div>
+        <div class="row pt-3 mx-auto">
+            <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center mx-auto">
+                <div class="card border-0 shadow-lg position-relative" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                    <img src="images/api.png" class="card-img-top" alt="Game Image">
+                    <div class="card-body text-center p-2">
+                        <p class="text-muted small mb-1">Project</p>
+                        <h6 class="mb-2">Project</h6>
+                    </div>
+                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                        6px 6px 12px rgba(255, 255, 255, 0.1); background-color: #00abf0;">
+                        Explore
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center mx-auto">
+                <div class="card border-0 shadow-lg position-relative" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                    <img src="images/api.png" class="card-img-top" alt="Game Image">
+                    <div class="card-body text-center p-2">
+                        <p class="text-muted small mb-1">Project</p>
+                        <h6 class="mb-2">Project</h6>
+                    </div>
+                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                        6px 6px 12px rgba(255, 255, 255, 0.1); background-color: #00abf0">
+                        Explore
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center mx-auto">
+                <div class="card border-0 shadow-lg position-relative" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                    <img src="images/api.png" class="card-img-top" alt="Game Image">
+                    <div class="card-body text-center p-2">
+                        <p class="text-muted small mb-1">Project</p>
+                        <h6 class="mb-2">Project</h6>
+                    </div>
+                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                        6px 6px 12px rgba(255, 255, 255, 0.1); background-color: #00abf0">
+                        Explore
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 d-flex flex-column align-items-center mx-auto">
+                <div class="card border-0 shadow-lg position-relative" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                    <img src="images/api.png" class="card-img-top" alt="Game Image">
+                    <div class="card-body text-center p-2">
+                        <p class="text-muted small mb-1">Project</p>
+                        <h6 class="mb-2">Project</h6>
+                    </div>
+                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                        6px 6px 12px rgba(255, 255, 255, 0.1); background-color: #00abf0">
+                        Explore
+                    </button>
+                </div>
+            </div>                  
         </div>
     </div>
 
