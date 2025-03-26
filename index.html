@@ -10,206 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="images/icon.png">
-    <style>
-        * {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            background: linear-gradient(135deg, #074769, #191a30);
-            background-size: cover;
-            background-attachment: fixed;
-            color: white;
-            overflow-x: hidden;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 15px auto;
-            background: linear-gradient(135deg, #0a4c70, #1b1c34);
-            border-radius: 30px;
-            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
-                        8px 8px 16px rgba(255, 255, 255, 0.1);
-        }
-
-        .navbar {
-            margin: 20px auto;
-            backdrop-filter: blur(80px);
-            width: 100%;
-            max-width: 1200px;
-            z-index: 1000;
-            background: linear-gradient(135deg, #0a4c70, #1b1c34);
-            border-radius: 30px;
-            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
-                        8px 8px 16px rgba(255, 255, 255, 0.1);
-        }
-
-        .navbar-brand {
-            font-size: 25px;
-            color: #00abf0;
-            font-weight: 600;
-        }
-
-        .navbar-nav a {
-            font-size: 18px;
-            color: white;
-            font-weight: 500;
-            margin-right: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .navbar a:hover {
-            color: #00abf0;
-        }
-
-        .profile {
-            display: flex;
-            justify-content: center;
-        }
-
-        .profile img {
-            width: 100%;
-            height: auto;
-            max-width: 400px;
-            border-radius: 50%;
-            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
-                        8px 8px 16px rgba(255, 255, 255, 0.1);
-        }
-
-        .aboutMe img {
-            border-radius: 50%;
-            width: 100%;
-            height: auto;
-            max-width: 400px;
-            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
-                        8px 8px 16px rgba(255, 255, 255, 0.1);
-        }
-
-        .greetings {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            margin-bottom: 0;
-        }
-
-        .greetings h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            text-align: center;
-            animation: fadeInDown 1.5s;
-        }
-
-        .greetings h3 {
-            font-size: 2rem;
-            font-weight: 500;
-            text-align: center;
-            color: #00abf0;
-            animation: fadeInDown 1.5s;
-        }
-
-        .greetings p {
-            margin: 10px 0 40px;
-            max-width: 600px;
-            text-align: center;
-            animation: fadeInRight 1.5s ease-in-out;
-        }
-
-        .contact-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .contact-buttons a {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            background-color: transparent;
-            border: 2px solid #00abf0;
-            font-size: 20px;
-            color: #00abf0;
-            text-decoration: none;
-            transition: transform 0.3s, box-shadow 0.3s;
-            background: linear-gradient(135deg, #0a4c70, #1b1c34);
-            border-radius: 50%;
-            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
-                        6px 6px 12px rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .contact-buttons a:hover {
-            transform: scale(1.1);
-            box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.6),
-                inset 4px 4px 10px rgba(255, 255, 255, 0.1);
-            background: #00abf0;
-            color: white;
-        }
-
-        .project-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .project-buttons button {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            background-color: transparent;
-            border: 2px solid #00abf0;
-            border-radius: 50%;
-            font-size: 20px;
-            color: #00abf0;
-            text-decoration: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .project-buttons button:hover {
-            transform: scale(1.1);
-            background-color: #00abf0;
-            color: white;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-        }
-
-        .footer {
-            color: white;
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/index/style.css">
 </head>
 
-<body>
+<body>  
     <nav class="navbar navbar-expand-lg mx-auto">
         <div class="container-fluid p-3">
             <a class="navbar-brand ms-3" href="index.html">Daniel</a>
@@ -236,8 +40,8 @@
         </div>
     </nav>
 
-    <div class="container d-flex justify-content-center align-items-center pb-5 mb-5">
-        <div class="row pt-5">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row py-5">
             <div class="col-lg-6 col-12">
                 <div class="profile">
                     <img src="images/profile.jpg" class="animate__animated animate__fadeIn" alt="Profile">
@@ -267,7 +71,188 @@
         </div>
     </div>
 
-    <footer class="footer border-top py-5" id="contacts">
+    <div class="container p-5 mx-auto" id="about">
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center mx-auto">
+                <h1 class="mt-4">About Me</h1>
+                <p class="animate__animated animate__fadeInRight d-flex justify-content-center align-items-center mt-3"
+                    style="font-size: 18px; color: white; text-align: justify; text-indent: 50px; line-height: 1.6;">Hello, I'm Daniel G. Melitante and you can call me
+                    Dan! I'm a 21-years-old in my junior year at the Polytechnic University of the Philippines, currently studying web
+                    and appication development. This website is for educational purposes, designed to showcase my skills
+                    and support my journey toward becoming a professional software engineer and developer.</p>
+            </div>
+            <div class="aboutMe col-lg-6 col-12 d-flex justify-content-center align-items-center mx-auto">
+                <img src="images/profile2.jpg" alt="profile2">
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 mx=auto" id="projects">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center ms-3">
+                <h1>Projects</h1>
+            </div>
+        </div>
+        <div class="row pt-2 mx-auto">
+            <div class="col-lg-6 col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex flex-column justify-content-center align-items-center py-5">
+                            <h3 class="pb-3">Web Development</h3>
+                            <div class="row d-flex justify-content-center align-items-center py-3">
+                                <div class="col-lg-6 col-12">
+                                    <div class="card border-0" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                                    <img src="images/gadget.png" class="card-img-top" alt="Project Image">
+                                    <div class="card-body text-center p-2">
+                                        <p class="text-muted small mb-1">Project 1</p>
+                                        <h6 class="mb-2">Project 1</h6>
+                                    </div>
+                                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); transition: transform 0.3s, box-shadow 0.3s;
+                                        background: linear-gradient(135deg, #0a4c70, #1b1c34);
+                                        border-radius: 50%;
+                                        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                                                    6px 6px 12px rgba(255, 255, 255, 0.1);
+                                        transition: all 0.3s ease;">
+                                        Explore
+                                    </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="card border-0" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                                    <img src="images/touristSpots.png" class="card-img-top" alt="Project Image">
+                                    <div class="card-body text-center p-2">
+                                        <p class="text-muted small mb-1">Project 2</p>
+                                        <h6 class="mb-2">Project 2</h6>
+                                    </div>
+                                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); transition: transform 0.3s, box-shadow 0.3s;
+                                        background: linear-gradient(135deg, #0a4c70, #1b1c34);
+                                        border-radius: 50%;
+                                        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                                                    6px 6px 12px rgba(255, 255, 255, 0.1);
+                                        transition: all 0.3s ease;">
+                                        Explore
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-lg-6 col-12">
+                                    <div class="card border-0" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                                    <img src="images/gallery.png" class="card-img-top" alt="Project Image">
+                                    <div class="card-body text-center p-2">
+                                        <p class="text-muted small mb-1">Project 3</p>
+                                        <h6 class="mb-2">Project 3</h6>
+                                    </div>
+                                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); transition: transform 0.3s, box-shadow 0.3s;
+                                        background: linear-gradient(135deg, #0a4c70, #1b1c34);
+                                        border-radius: 50%;
+                                        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                                                    6px 6px 12px rgba(255, 255, 255, 0.1);
+                                        transition: all 0.3s ease;">
+                                        Explore
+                                    </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="card border-0" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                                    <img src="images/api.png" class="card-img-top" alt="Project Image">
+                                    <div class="card-body text-center p-2">
+                                        <p class="text-muted small mb-1">Project 4</p>
+                                        <h6 class="mb-2">Project 4</h6>
+                                    </div>
+                                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); transition: transform 0.3s, box-shadow 0.3s;
+                                        background: linear-gradient(135deg, #0a4c70, #1b1c34);
+                                        border-radius: 50%;
+                                        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                                                    6px 6px 12px rgba(255, 255, 255, 0.1);
+                                        transition: all 0.3s ease;">
+                                        Explore
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-lg-6 col-12">
+                                    <div class="card border-0" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                                    <img src="images/video.png" class="card-img-top" alt="Project Image">
+                                    <div class="card-body text-center p-2">
+                                        <p class="text-muted small mb-1">Midterm 1</p>
+                                        <h6 class="mb-2">Midterm 1</h6>
+                                    </div>
+                                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); transition: transform 0.3s, box-shadow 0.3s;
+                                        background: linear-gradient(135deg, #0a4c70, #1b1c34);
+                                        border-radius: 50%;
+                                        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                                                    6px 6px 12px rgba(255, 255, 255, 0.1);
+                                        transition: all 0.3s ease;">
+                                        Explore
+                                    </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="card border-0" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                                        8px 8px 16px rgba(255, 255, 255, 0.1);">
+                                    <img src="images/parralax.png" class="card-img-top" alt="Project Image">
+                                    <div class="card-body text-center p-2">
+                                        <p class="text-muted small mb-1">Midterm 2</p>
+                                        <h6 class="mb-2">Midterm 2</h6>
+                                    </div>
+                                    <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                                        style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); transition: transform 0.3s, box-shadow 0.3s;
+                                        background: linear-gradient(135deg, #0a4c70, #1b1c34);
+                                        border-radius: 50%;
+                                        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                                                    6px 6px 12px rgba(255, 255, 255, 0.1);
+                                        transition: all 0.3s ease;">
+                                        Explore
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex flex-column justify-content-center align-items-center py-5">
+                            <h3 class="pb-3">App Development</h3>
+                            <div class="card border-0" style="width: 250px; height: 200px; border-radius: 15px; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                                    8px 8px 16px rgba(255, 255, 255, 0.1);">
+                                <img src="images/" class="card-img-top" alt="">
+                                <div class="card-body text-center p-2">
+                                    <p class="text-muted small mb-1">Project</p>
+                                    <h6 class="mb-2">Project</h6>
+                                </div>
+                                <button type="button" class="btn btn-primary rounded-pill px-3 shadow-lg"
+                                    style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); transition: transform 0.3s, box-shadow 0.3s;
+                                    background: linear-gradient(135deg, #0a4c70, #1b1c34);
+                                    border-radius: 50%;
+                                    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6),
+                                                6px 6px 12px rgba(255, 255, 255, 0.1);
+                                    transition: all 0.3s ease;">
+                                    Explore
+                                </button>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5" id="contacts">
         <div class="row">
             <div class="col">
                 <div class="contact-buttons d-flex justify-content-center align-items-center pt-3">
@@ -288,7 +273,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
