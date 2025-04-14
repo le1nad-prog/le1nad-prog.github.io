@@ -1,0 +1,285 @@
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: 200px; width: 100%;">
+        <img src="images/top1.jpg" style="height: 200px; width: 100%; object-fit: cover; position: absolute;">
+        <div class="row">
+            <div class="col-4 d-flex align-items-center">
+                <div class="card rounded"
+                    style="height: 50px; width: 50px; background-color: white; color: black; position: relative; top: 130px; left: 15px;">
+                    <span class="my-auto" style="font-size: 20px; text-align: center; font-weight: bold;">1</div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h5" style="position: relative; top: 135px; right: 60px; font-weight: normal;">
+                        One Piece
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="position: relative; top: 130px; right: 60px; font-weight: normal;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">30,713</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: auto; width: 100%;">
+        <div class="row p-3 d-flex justify-content-center align-items-center">
+            <div class="col-2">
+                <div class="card rounded mx-auto"
+                    style="height: 50px; width: 50px; text-align: center; display: flex; justify-content: center; font-weight: normal; ">2
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card rounded" style="height: 100px; width: 55px; border: none;">
+                    <img src="images/top2.jpg"
+                        style="height: 100%; width: 100%; object-fit: contain; border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h6" style="font-weight: normal; font-size: 14px; text-align: justify; ">
+                        Solo Leveling Season 2: Arise from the Shadow
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="font-size:14px; text-align: justify;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">10,621</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: auto; width: 100%;">
+        <div class="row p-3 d-flex justify-content-center align-items-center">
+            <div class="col-2">
+                <div class="card rounded mx-auto"
+                    style="height: 50px; width: 50px; text-align: center; display: flex; justify-content: center; font-weight: normal; ">3
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card rounded" style="height: 100px; width: 55px; border: none;">
+                    <img src="images/top3.jpg"
+                        style="height: 100%; width: 100%; object-fit: contain; border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h6" style="font-weight: normal; font-size: 14px; text-align: justify; ">
+                        The Unaware Atelier Master
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="font-size:14px; text-align: justify;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">9,738</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: auto; width: 100%;">
+        <div class="row p-3 d-flex justify-content-center align-items-center">
+            <div class="col-2">
+                <div class="card rounded mx-auto"
+                    style="height: 50px; width: 50px; text-align: center; display: flex; justify-content: center; font-weight: normal; ">4
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card rounded" style="height: 100px; width: 55px; border: none;">
+                    <img src="images/top4.jpg"
+                        style="height: 100%; width: 100%; object-fit: contain; border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h6" style="font-weight: normal; font-size: 14px; text-align: justify; ">
+                        Yandere Dark Elf: She Chased Me All the Way
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="font-size:14px; text-align: justify;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">8,169</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: auto; width: 100%;">
+        <div class="row p-3 d-flex justify-content-center align-items-center">
+            <div class="col-2">
+                <div class="card rounded mx-auto"
+                    style="height: 50px; width: 50px; text-align: center; display: flex; justify-content: center; font-weight: normal; ">5
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card rounded" style="height: 100px; width: 55px; border: none;">
+                    <img src="images/top5.jpg"
+                        style="height: 100%; width: 100%; object-fit: contain; border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h6" style="font-weight: normal; font-size: 14px; text-align: justify; ">
+                        To Be Hero X
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="font-size:14px; text-align: justify;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">6,050</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: auto; width: 100%;">
+        <div class="row p-3 d-flex justify-content-center align-items-center">
+            <div class="col-2">
+                <div class="card rounded mx-auto"
+                    style="height: 50px; width: 50px; text-align: center; display: flex; justify-content: center; font-weight: normal; ">6
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card rounded" style="height: 100px; width: 55px; border: none;">
+                    <img src="images/top6.jpg"
+                        style="height: 100%; width: 100%; object-fit: contain; border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h6" style="font-weight: normal; font-size: 14px; text-align: justify; ">
+                        From Old Country Bumpkin to Master Swordsman
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="font-size:14px; text-align: justify;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">5,949</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: auto; width: 100%;">
+        <div class="row p-3 d-flex justify-content-center align-items-center">
+            <div class="col-2">
+                <div class="card rounded mx-auto"
+                    style="height: 50px; width: 50px; text-align: center; display: flex; justify-content: center; font-weight: normal; ">7
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card rounded" style="height: 100px; width: 55px; border: none;">
+                    <img src="images/top7.jpg"
+                        style="height: 100%; width: 100%; object-fit: contain; border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h6" style="font-weight: normal; font-size: 14px; text-align: justify; ">
+                        Devil may cry
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="font-size:14px; text-align: justify;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">5,547</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: auto; width: 100%;">
+        <div class="row p-3 d-flex justify-content-center align-items-center">
+            <div class="col-2">
+                <div class="card rounded mx-auto"
+                    style="height: 50px; width: 50px; text-align: center; display: flex; justify-content: center; font-weight: normal; ">8
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card rounded" style="height: 100px; width: 55px; border: none;">
+                    <img src="images/top8.jpg"
+                        style="height: 100%; width: 100%; object-fit: contain; border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h6" style="font-weight: normal; font-size: 14px; text-align: justify; ">
+                        Naruto: Shippuden
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="font-size:14px; text-align: justify;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">4,683</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: auto; width: 100%;">
+        <div class="row p-3 d-flex justify-content-center align-items-center">
+            <div class="col-2">
+                <div class="card rounded mx-auto"
+                    style="height: 50px; width: 50px; text-align: center; display: flex; justify-content: center; font-weight: normal; ">9
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card rounded" style="height: 100px; width: 55px; border: none;">
+                    <img src="images/top9.jpg"
+                        style="height: 100%; width: 100%; object-fit: contain; border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h6" style="font-weight: normal; font-size: 14px; text-align: justify; ">
+                        Kakushite! Makina-san!!
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="font-size:14px; text-align: justify;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">4,507</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex align-items-center pt-3 px-3">
+    <div class="card rounded p-0" style="height: auto; width: 100%;">
+        <div class="row p-3 d-flex justify-content-center align-items-center">
+            <div class="col-2">
+                <div class="card rounded mx-auto"
+                    style="height: 50px; width: 50px; text-align: center; display: flex; justify-content: center; font-weight: normal; ">10
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card rounded" style="height: 100px; width: 55px; border: none;">
+                    <img src="images/top10.jpg"
+                        style="height: 100%; width: 100%; object-fit: contain; border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row-6">
+                    <div class="h6" style="font-weight: normal; font-size: 14px; text-align: justify; ">
+                        The Apothecary Diaries Season 2
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="h6" style="font-size:14px; text-align: justify;">
+                        <i class="fa-solid fa-eye"><span class="ms-1" style="font-weight: normal;">4,417</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
