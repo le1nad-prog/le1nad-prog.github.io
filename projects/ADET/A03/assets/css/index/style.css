@@ -1,0 +1,131 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navLogo {
+    width: 100%;
+    height: 50px;
+}
+
+.navbar a:hover {
+    color: #DA5C45;
+}
+
+.active1 {
+    color: #DA5C45;
+}
+
+.card {
+    border: none;
+    border-radius: 24px;
+}
+
+.bannerCard {
+    min-height: 375px;
+    max-height: 100%;
+    position: relative;
+}
+
+.bannerBackgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bannerLogo {
+    width: 250px;
+    height: 118px;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.bannerDescription {
+    font-size: 14px;
+    min-width: auto;
+    max-width: 400px;
+    text-align: center;
+    color: #44382A;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.bannerMainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.theBears2Card, .theBears3Card {
+    height: 180px;
+}
+
+.theBears2, .theBears3 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.iceBearBackgroundCard, .grizzlyBearBackgroundCard, .pandaBearBackgroundCard {
+    height: 115px;
+}
+
+.iceBearBackgroundImage, .grizzlyBearBackgroundImage, .pandaBearBackgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.descriptionCard {
+    background-color: #FFFFFF;
+    height: 75px;
+}
+
+.description {
+    margin: auto;
+    color: #44382A;
+    font-size: 12px;
+    font-style: italic;
+    max-width: 400px;
+    text-align: center;
+}
+
+.iceBearCard, .grizzlyBearCard, .pandaBearCard {
+    height: 200px;
+}
+
+.iceBearImage, .grizzlyBearImage, .pandaBearImage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.iceBearNameCard, .grizzlyBearNameCard, .pandaBearNameCard {
+    background-color: #FFFFFF;
+    height: 70px;
+}
+
+.iceBearName, .grizzlyBearName, .pandaBearName {
+    color: #DA5C45;
+    font-weight: bold;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.iceBearName a, .grizzlyBearName a, .pandaBearName a {
+    color: #DA5C45;
+    text-decoration: none;
+}

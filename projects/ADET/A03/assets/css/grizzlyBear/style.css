@@ -1,0 +1,119 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navLogo {
+    width: 100%;
+    height: 50px;
+}
+
+.navbar a:hover {
+    color: #DA5C45;
+}
+
+.active3 {
+    color: #DA5C45;
+}
+
+.card {
+    border: none;
+    border-radius: 24px;
+}
+
+.bannerCard {
+    min-height: 375px;
+    max-height: 100%;
+    position: relative;
+}
+
+.bannerBackgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bannerTitleText {
+    color: #DA5C45;
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.bannerDescription {
+    font-size: 14px;
+    min-width: auto;
+    max-width: 400px;
+    text-align: center;
+    color: #44382A;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.bannerMainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grizzlyBear1Card, .grizzlyBear2Card  {
+    height: 180px;
+}
+
+.grizzlyBear1Image, .grizzlyBear2Image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.grizzlyBearDescription1Card, .grizzlyBearDescription2Card, .grizzlyBearDescription3Card {
+    height: 115px;
+    background-color: #f9f4ef;
+}
+
+.grizzlyBearDescription1Text, .grizzlyBearDescription2Text, .grizzlyBearDescription3Text {
+    color: #44382A;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+.galleryTextCard {
+    background-color: #f9f4ef;
+    height: 75px;
+}
+
+.galleryText {
+    margin: auto;
+    color: #44382A;
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 400px;
+    text-align: center;
+}
+
+.grizzlyBearGalleryCard {
+    height: 135px;
+}
+
+.grizzlyBearGalleryImage1, .grizzlyBearGalleryImage2, .grizzlyBearGalleryImage3, .grizzlyBearGalleryImage4, .grizzlyBearGalleryImage5, .grizzlyBearGalleryImage6, .grizzlyBearGalleryImage7, .grizzlyBearGalleryImage8 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}

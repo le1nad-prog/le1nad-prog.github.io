@@ -1,0 +1,118 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navLogo {
+    width: 100%;
+    height: 50px;
+}
+
+.navbar a:hover {
+    color: #DA5C45;
+}
+
+.active2 {
+    color: #DA5C45;
+}
+
+.card {
+    border: none;
+    border-radius: 24px;
+}
+
+.bannerCard {
+    min-height: 375px;
+    max-height: 100%;
+    position: relative;
+}
+
+.bannerBackgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bannerTitleText {
+    color: #DA5C45;
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.bannerDescription {
+    font-size: 14px;
+    min-width: auto;
+    max-width: 400px;
+    text-align: center;
+    color: #44382A;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.bannerMainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.iceBear1Card, .iceBear2Card  {
+    height: 180px;
+}
+
+.iceBear1Image, .iceBear2Image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.iceBearDescription1Card, .iceBearDescription2Card, .iceBearDescription3Card {
+    height: 115px;
+    background-color: #f9f4ef;
+}
+
+.iceBearDescription1Text, .iceBearDescription2Text, .iceBearDescription3Text {
+    color: #44382A;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+.galleryTextCard {
+    background-color: #f9f4ef;
+    height: 75px;
+}
+
+.galleryText {
+    margin: auto;
+    color: #44382A;
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 400px;
+    text-align: center;
+}
+
+.iceBearGalleryCard {
+    height: 135px;
+}
+
+.iceBearGalleryImage1, .iceBearGalleryImage2, .iceBearGalleryImage3, .iceBearGalleryImage4, .iceBearGalleryImage5, .iceBearGalleryImage6, .iceBearGalleryImage7, .iceBearGalleryImage8 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
