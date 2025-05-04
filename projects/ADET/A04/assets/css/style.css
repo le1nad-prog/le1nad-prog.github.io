@@ -1,0 +1,181 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.leftContainerCard {
+    height: 100%; 
+    border-top: none; 
+    border-bottom: none; 
+    border-left: none; 
+    border-radius: 0;
+}
+
+.logoCard {
+    width: 100%; 
+    height: 100px; 
+    border: none;
+}
+
+.profileCard {
+    width: 100%; 
+    height: 120px; 
+    border: none;
+}
+
+.profileImage {
+    object-fit: cover; 
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%;
+}
+
+.categoryCard {
+    width: 860px; 
+    border: none; 
+    overflow-x: auto;
+}
+
+.categoryButton {
+    border-radius: 16px;
+    width: 200px;
+    background-color:  #06476A;  ;
+    border: none;
+}
+
+.categoryButton:hover {
+    background-color: #08618F;
+    cursor: pointer;
+}
+
+.categories {
+    width: fit-content;
+}
+
+.maincontainer {
+    height: 64dvh;
+    border: none;
+}
+
+.productCard {
+    width: 208px; 
+    height: 278px; 
+    background-color: #2A2F33; 
+    border: none;
+}
+
+.productImage {
+    width: 100%; 
+    height: 208px; 
+}
+
+.productName {
+    font-size: 14px; 
+    max-width: 180px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    display: inline-block;
+}
+
+.productPrice {
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.addToCartButton {
+    background-color:  #06476A;
+    border-radius: 50%; 
+    border: none;
+    cursor: pointer;
+}
+
+.addToCartButton:hover {
+    background-color: #08618F;
+}
+
+.receiptContainerCard {
+    height: 100%;
+}
+
+.receiptCard {
+    width: 100%; 
+    height: 100px; 
+    background-color: #2A2F33; 
+    border: none;
+}
+
+.receiptProductImage {
+    width: 70px; 
+    height: 70px;
+}
+
+.receiptProductName {
+    font-size: 14px; 
+    max-width: 180px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    display: inline-block;
+}
+
+.receiptProductPrice {
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+.decreaseQuantityButton, .increaseQuantityButton{
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    line-height: 20px; 
+    cursor: pointer;
+    background-color: #06476A;
+}
+
+.removeButton {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    background-color: #06476A;
+}
+
+.totalCard {
+    width: 100%; 
+    height: 150px; 
+    border-radius: 24px 24px 0 0;
+}
+
+.checkoutButton{
+    background-color:  #06476A;
+    width: 100%; 
+    height: 50px; 
+    border-radius: 16px; 
+    border: none; 
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.checkoutButton:hover {
+    background-color: #08618F;
+}
+
+#scrollable-order-list1,
+#scrollable-order-list2,
+#scrollable-order-list3 {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#scrollable-order-list1::-webkit-scrollbar,
+#scrollable-order-list2::-webkit-scrollbar,
+#scrollable-order-list3::-webkit-scrollbar {
+    display: none;
+}
