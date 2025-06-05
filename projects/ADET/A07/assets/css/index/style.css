@@ -1,0 +1,48 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #2a2f36;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.mainContentCard {
+    width: 100%;
+    height: 300px
+}
+
+.mainContentImage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.mainContentTitle {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #0a4c70;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+    background-color: #0f6a9a;
+}
